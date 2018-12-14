@@ -1,5 +1,5 @@
 # lzy.js - The littlest lazy loader
-A teeny lazy loader to make your site more performant, by only loading images as they get near the viewport. 33 lines of code, 863 bytes of data (460 when minified), vanilla javascript only.
+A teeny lazy loader to make your site more performant, by only loading images as they get near the viewport. 33 lines of code, 863 bytes of data (460 when minified), vanilla JavaScript only.
 
 Written by [Adam](https://adamduncandesigns.com) and [Neef](https://neef.co)
 
@@ -9,7 +9,7 @@ Written by [Adam](https://adamduncandesigns.com) and [Neef](https://neef.co)
 * If `data-src` is not on an `img`, lzy.js will fallback to applying `background-image` to element's style
 * Will remove the `data-src` attribute once loading is done
 * Can pass in an `offset` value which controls how far the images are from the viewport before being loaded. By default this is 200px
-* Uses the `intersectionObserver` API, with a polyfill method for unsupported browsers at the bottom of this Readme
+* Uses the `IntersectionObserver` API, with a polyfill method for unsupported browsers at the bottom of this Readme
 
 ## Usage
 To use lzy.js include the script in your html file
@@ -47,7 +47,7 @@ lzy({
  ```
 
 ### Polyfill for Intersection Observer
-lzy.js uses the `intersectionObserver` API, which currently [doesn't have an amazing amount](https://caniuse.com/#feat=intersectionobserver) of browser support. [pollyfill.io](https://pollyfill.io) to the rescue! To add support, add the following script to your html file, before `lazy.js`
+lzy.js uses the `IntersectionObserver` API, which currently [doesn't have an amazing amount](https://caniuse.com/#feat=intersectionobserver) of browser support. [pollyfill.io](https://pollyfill.io) to the rescue! To add support, add the following script to your html file, before `lazy.js`
 ```html
 <script> if (!window.IntersectionObserver) document.write('<script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"> <\/script>'); </script>
  ```

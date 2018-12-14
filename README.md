@@ -36,16 +36,19 @@ To trigger it, add the following function at the bottom of lzy.js, or in script 
 lzy();
  ```
  
- ### Options
- To customise the `offset` value, call it like below. This scenario will load images as they get 500px from the viewport.
- ```javascript
+### Options
+To customise the `offset` value, call it like below. This scenario will load images as they get 500px from the viewport.
+```javascript
 lzy({
    offset: 500
 });
  ```
 
-## Polyfill for Intersection Observer
+### Polyfill for Intersection Observer
 lzy.js uses the `intersectionObserver` API, which currently [doesn't have an amazing amount](https://caniuse.com/#feat=intersectionobserver) of browser support. [pollyfill.io](https://pollyfill.io) to the rescue! To add support, add the following script to your html file, before `lazy.js`
 ```html
 <script> if (!window.IntersectionObserver) document.write('<script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"> <\/script>'); </script>
  ```
+ 
+## License
+Licensed under the The MIT License (MIT).

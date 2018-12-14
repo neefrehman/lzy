@@ -12,7 +12,7 @@ Written by [Adam](https://adamduncandesigns.com) and [Neef](https://neef.co)
 * Uses the `IntersectionObserver` API, with a polyfill method for unsupported browsers near [the bottom of this Readme](https://github.com/neefrehman/lzy/blob/master/README.md#polyfill-for-intersection-observer)
 
 ## Usage
-To use lzy.js include the script in your html file
+To use lzy.js download the file and include the script in your html file with it's correct path
 ```html
 <script src="lzy.js> </script>
  ```

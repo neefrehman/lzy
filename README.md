@@ -22,12 +22,12 @@ Ensure all the elements you want lazily-loaded have a `data-src` attribute, with
 ```html
 <img data-src="path_to_image.jpg">
 ```
-This will resolve to
+This will resolve to the following as the element enters the offset region
 ```html
 <img src="path_to_image.jpg">
 ```
 
-Or for any non `img` element it will resove to
+Or for any non `img` element it would resove to
 ```html
 <div style="background-image: url("path_to_image.jpg);"> </div>
 ```

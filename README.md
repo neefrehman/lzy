@@ -9,7 +9,7 @@ Written by [Adam](https://github.com/adamduncan) and [Neef](https://github.com/n
 * If `data-src` is not on an `img`, lzy.js will fallback to applying `background-image` to element's style
 * Will remove the `data-src` attribute once loading is done
 * Can pass in an `offset` value which controls how far the images are from the viewport before being loaded. By default this is 200px
-* Uses the `IntersectionObserver` API, with a polyfill method for unsupported browsers near [the bottom of this Readme](https://github.com/neefrehman/lzy/blob/master/README.md#polyfill-for-intersection-observer)
+* Uses the `IntersectionObserver` API, with a polyfill method for unsupported browsers near [the bottom of this Readme](#polyfill-for-intersection-observer)
 
 ## Usage
 To use lzy.js download the file and include the script in your html file with it's correct path

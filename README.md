@@ -39,7 +39,7 @@ lzy();
  ```
  
 ### Options
-To customise the `offset` value, call it like below. This scenario will load images as they get 500px from the viewport.
+To customise the `offset` value, call it like below. This example will load images as they get 500px from the viewport.
 ```javascript
 lzy({
    offset: 500

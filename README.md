@@ -1,6 +1,8 @@
 # lzy.js - The littlest lazy loader
 A teeny lazy loader to make your site more performant, by only loading images as they get near the viewport. 33 lines of code, 863 bytes of data (460 minified), vanilla javascript only.
 
+Written by [Adam](https://adamduncandesigns.com) and [Neef](https://neef.co)
+
 ## Features
 * Written in Vanilla JS, no other dependencies
 * Will take `data-src` attribute and load in an `src` attribute for images

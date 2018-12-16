@@ -5,8 +5,8 @@ Written by [Adam](https://github.com/adamduncan) and [Neef](https://github.com/n
 
 ## Features
 * Written in Vanilla JS, no other dependencies
-* Will take `data-src` attribute and load in an `src` attribute for images
-* If `data-src` is not on an `img`, lzy.js will fallback to applying `background-image` to element's style
+* Will take `data-src` attribute and load in an `src` for images
+* If not on an `img`, lzy.js will fallback to applying `background-image` to the element's style
 * Will remove the `data-src` attribute once loading is done
 * Can pass in an `offset` value which controls how far the images are from the viewport before being loaded. By default this is 200px
 * Uses the `IntersectionObserver` API, with a super easy polyfill method for unsupported browsers near the [bottom of this Readme](#polyfill-for-intersection-observer)

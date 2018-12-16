@@ -6,16 +6,16 @@ A teeny lazy loader to make your site more performant, by only loading images as
 Written by [Adam](https://github.com/adamduncan) and [Neef](https://github.com/neefrehman)
 
 ## Features
-* Very very small! 863 bytes of data (310 when minified & gzipped)
+* Very small! 33 lines and 863 bytes of data (310 when minified & gzipped)
 * Written in Vanilla JS, no other dependencies
 * Will take `data-src` attribute and load in an `src` for images
-* If not on an `img`, lzy.js will fallback to applying `background-image` to the element's style
+* If not on an `img` element, `lzy.js` will fallback to applying `background-image` to the element's style
 * Will remove the `data-src` attribute once loading is done
-* Can pass in an `offset` value which controls how far the images are from the viewport before being loaded. By default this is 200px
+* Can pass in an `offset` value, which controls how far the images are from the viewport before being loaded. By default this is 200px
 * Uses the `IntersectionObserver` API, with a super easy polyfill method for unsupported browsers near the [bottom of this Readme](#polyfill-for-intersection-observer)
 
 ## Usage
-To use lzy.js download the file and include the script in your html file with it's correct path
+To use lzy.js download the file, add it to your project, and include the script in your html file with it's correct path
 ```html
 <script src="lzy.js> </script>
  ```
@@ -36,7 +36,7 @@ Or for any non `img` element it would resove to
 ```
  
 ### Trigger
-To trigger it, add the following function at the bottom of lzy.js, or in script that's loaded afterwards if you want more control.
+To trigger it, add the following function at the bottom of lzy.js, or in a script that's loaded afterwards if you want more control.
 ```javascript
 lzy();
  ```

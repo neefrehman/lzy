@@ -7,7 +7,7 @@ Written by [Adam](https://github.com/adamduncan) and [Neef](https://github.com/n
 
 ## Features
 * Very small! 33 lines and 863 bytes of data (310 when minified & gzipped)
-* Written in Vanilla JS, no other dependencies
+* Written in vanilla JS, no other dependencies
 * Will take `data-src` attribute and load in an `src` for images
 * If not on an `img` element, `lzy.js` will fallback to applying `background-image` to the element's style
 * Will remove the `data-src` attribute once loading is done
@@ -15,7 +15,7 @@ Written by [Adam](https://github.com/adamduncan) and [Neef](https://github.com/n
 * Uses the `IntersectionObserver` API, with a super easy polyfill method for unsupported browsers near the [bottom of this Readme](#polyfill-for-intersection-observer)
 
 ## Usage
-To use lzy.js download the file, add it to your project, and include the script in your html file with it's correct path
+To use `lzy.js` download the file, add it to your project, and include the script in your html file with it's correct path
 ```html
 <script src="lzy.js> </script>
  ```

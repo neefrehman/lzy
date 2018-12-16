@@ -40,7 +40,7 @@ lzy();
  ```
  
 ### Options
-To customise the `offset` value, call it like below. This example will load images as they get 500px from the viewport.
+The only option in `lzy.js` is the `offset` value, which controls how far the images are from the viewport before being loaded. To customise this value, include in in the `lzy` expression it like below. This example will load images as they get 500px from the viewport.
 ```javascript
 lzy({
    offset: 500

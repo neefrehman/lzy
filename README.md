@@ -50,7 +50,7 @@ lzy({
  ```
 
 ### Polyfill for Intersection Observer
-lzy.js uses the `IntersectionObserver` API, which currently [doesn't have an amazing amount](https://caniuse.com/#feat=intersectionobserver) of browser support. To make sure you can support all browsers, add the following [polyfill.io](https://polyfill.io/) script to your html file, before `lzy.js`
+lzy.js uses the `IntersectionObserver` API, which currently [doesn't have an amazing amount](https://caniuse.com/#feat=intersectionobserver) of browser support. To ensure support for all browsers, add the following [polyfill.io](https://polyfill.io/) script to your html file, before `lzy.js`
 ```html
 <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"> </script>'
  ```

@@ -6,8 +6,8 @@ A teeny lazy loader for images to make your site more performant, by only loadin
 Written by [Adam](https://github.com/adamduncan) and [Neef](https://github.com/neefrehman)
 
 ## Features
-* Very small! 33 lines and 863 bytes of data (310 when minified & gzipped)
-* Written in vanilla JS, no other dependencies
+* Very small! 31 lines and 838 bytes of data (310 when minified & gzipped)
+* Written in vanilla JS (ES6), no other dependencies
 * Will take `data-src` attribute and load in an `src` for images
 * If not on an `img` element, `lzy.js` will fallback to applying `background-image` to the element's style
 * Will remove the `data-src` attribute once loading is done
@@ -19,7 +19,7 @@ To use `lzy.js` download the file, add it to your project, and include the scrip
 ```html
 <script src="lzy.js> </script>
  ```
- 
+
 ### Setup
 Ensure all the elements you want lazily-loaded have a `data-src` attribute, with the path to the image you want to use.
 ```html
@@ -34,13 +34,13 @@ Or for any non `img` element it would resove to
 ```html
 <div style="background-image: url("path_to_image.jpg);"> </div>
 ```
- 
+
 ### Trigger
 To trigger it, add the following function at the bottom of lzy.js, or in a script that's loaded afterwards if you want more control.
 ```javascript
 lzy();
  ```
- 
+
 ### Options
 The only option in `lzy.js` is the `offset` value, which controls how far the images are from the viewport before being loaded. To customise this value, include it in the `lzy` expression it like below. This example will load images as they get 500px from the viewport.
 ```javascript
@@ -54,6 +54,6 @@ lzy({
 ```html
 <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"> </script>
  ```
- 
+
 ## License
 Licensed under the The MIT License (MIT).

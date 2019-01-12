@@ -1,10 +1,10 @@
 const lzy = ({ offset } = {}) => {
 
   const images = document.querySelectorAll("[data-src]");
-  const config = {
+  const observer = new IntersectionObserver(onIntersection, {
     rootMargin: offset ? `${offset}px ${offset}px` : "200px 200px",
     threshold: 0.01
-  };
+  });
 
   function loadImage(imageEl) {
     const imageSource = imageEl.getAttribute("data-src");
@@ -16,7 +16,6 @@ const lzy = ({ offset } = {}) => {
     imageEl.removeAttribute("data-src");
   }
 
-  const observer = new IntersectionObserver(onIntersection, config);
   images.forEach(image => observer.observe(image));
 
   function onIntersection(entries) {

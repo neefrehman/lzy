@@ -1,12 +1,12 @@
 # lzy.js - The littlest lazy loader
 A teeny lazy loader for images to make your site more performant, by only loading them as they approach the viewport.
 
-31 lines of code, vanilla JavaScript, 838 bytes of data (310 when minified & gzipped).
+30 lines of code, vanilla JavaScript, 813 bytes of data (310 when minified & gzipped).
 
 Written by [Adam](https://github.com/adamduncan) and [Neef](https://github.com/neefrehman)
 
 ## Features
-* Very small! 31 lines and 838 bytes of data (310 when minified & gzipped)
+* Very small! 30 lines and 813 bytes of data (310 when minified & gzipped)
 * Written in vanilla JS (ES6), no other dependencies
 * Will take `data-src` attribute and load in an `src` for images
 * If not on an `img` element, `lzy.js` will fallback to applying `background-image` to the element's style
@@ -15,9 +15,9 @@ Written by [Adam](https://github.com/adamduncan) and [Neef](https://github.com/n
 * Uses the `IntersectionObserver` API, with a super easy polyfill method for unsupported browsers near the [bottom of this Readme](#polyfill-for-intersection-observer)
 
 ## Usage
-To use `lzy.js` download the file, add it to your project, and include the script in your html file with it's correct path
+To use `lzy.js` download the file, add it to your project, and include the script in your html file with it's correct path, for example (using the minified version):
 ```html
-<script src="lzy.js> </script>
+<script src="lzy.min.js> </script>
  ```
 
 ### Setup

@@ -1,12 +1,12 @@
 # lzy.js - The littlest lazy loader
 A teeny lazy loader for images to make your site more performant, by only loading them as they approach the viewport.
 
-30 lines of code, vanilla JavaScript, 813 bytes of data (310 when minified & gzipped).
+30 lines of code, vanilla JavaScript, 790 bytes of data (< 300 when minified & gzipped).
 
 Written by [Adam](https://github.com/adamduncan) and [Neef](https://github.com/neefrehman)
 
 ## Features
-* Very small! 30 lines and 813 bytes of data (310 when minified & gzipped)
+* Very small! 30 lines and 790 bytes of data (< 300 when minified & gzipped)
 * Written in vanilla JS (ES6), no other dependencies
 * Will take `data-src` attribute and load in an `src` for images
 * If not on an `img` element, `lzy.js` will fallback to applying `background-image` to the element's style
@@ -42,11 +42,9 @@ lzy();
  ```
 
 ### Options
-The only option in `lzy.js` is the `offset` value, which controls how far the images are from the viewport before being loaded. To customise this value, include it in the `lzy` expression it like below. This example will load images as they get 500px from the viewport.
+The only option in `lzy.js` is the `offset` value, which controls how far the images are from the viewport before being loaded. By default the value for this is 200px. To customise this value, include it as an argument when `lzy` is called, like below. This example will load images as they get 500px from the viewport.
 ```javascript
-lzy({
-   offset: 500
-});
+lzy(500);
  ```
 
 ### Polyfill for Intersection Observer

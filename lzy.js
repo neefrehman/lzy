@@ -6,7 +6,7 @@ const lazyAdam = (offset = 200) => {
     threshold: 0.01
   });
 
-  function loadImage(imageEl) {
+  const loadImage = imageEl => {
     const imageSource = imageEl.getAttribute("data-src");
     if (imageEl.tagName === "IMG") {
       imageEl.setAttribute("src", imageSource);
@@ -14,7 +14,7 @@ const lazyAdam = (offset = 200) => {
       imageEl.style.backgroundImage = `url(${imageSource})`;
     }
     imageEl.removeAttribute("data-src");
-  }
+};
 
   images.forEach(image => observer.observe(image));
 

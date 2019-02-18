@@ -1,13 +1,13 @@
 # lzy.js - The littlest lazy loader
 A teeny lazy loader for images to make your site more performant, by only loading them as they approach the viewport.
 
-30 lines of code, vanilla JavaScript only, and 790 bytes of data (297 when minified & gzipped).
+30 lines of code, vanilla JavaScript only, and under 800 bytes of data (300 when minified & gzipped).
 
 Written by [Adam](https://github.com/adamduncan) and [Neef](https://github.com/neefrehman)
 
 
 ## Features
-* Very small! 30 lines and 790 bytes (297 when minified & gzipped)
+* Very small! 30 lines and under 800 bytes (297 when minified & gzipped)
 * Written in vanilla JS (ES2015+), with no other dependencies
 * Will take a `data-src` attribute and load in an `src` for images
 * If not on an `img` element, `lzy.js` will fallback to applying `background-image` to the element's style
@@ -21,7 +21,7 @@ To use `lzy.js` download the file and add it to your project folder, and include
 ```html
 <script src="javascript/lzy.min.js> </script>
  ```
- 
+
 
 ### Setup
 Ensure all the elements you want lazily-loaded have a `data-src` attribute, with the path to the image you want to use.
@@ -44,21 +44,21 @@ To call `lzy`, add the following function at the bottom of the `lzy.js` file, or
 ```javascript
 lzy();
  ```
- 
+
 
 ### Options
 The only option in `lzy.js` is the `offset` value, which controls how far the images are from the viewport before being loaded, which by default is 200px. To customise this value, include it as an argument when calling `lzy`. The following example will load images as they get 500px from the viewport.
 ```javascript
 lzy(500);
  ```
- 
+
 
 ### Polyfill for Intersection Observer
 `lzy.js` uses the `IntersectionObserver` API, which at the time of writing [doesn't have an amazing amount](https://caniuse.com/#feat=intersectionobserver) of browser support. To ensure support for all browsers, add the following [polyfill.io](https://polyfill.io/) script to your html file, before including the script for `lzy.js`.
 ```html
 <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"> </script>
  ```
- 
+
 
 ## License
 Licensed under the The MIT License (MIT).

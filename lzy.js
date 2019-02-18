@@ -1,6 +1,16 @@
-const lazyAdam = (offset = 200) => {
+const lzy = (offset = 200) => {
 
   const images = document.querySelectorAll("[data-src]");
+
+  const onIntersection = entries => {
+    entries.forEach(entry => {
+      if (entry.intersectionRatio > 0) {
+        observer.unobserve(entry.target);
+        loadImage(entry.target);
+      }
+    });
+  };
+
   const observer = new IntersectionObserver(onIntersection, {
     rootMargin: `${offset}px ${offset}px`,
     threshold: 0.01
@@ -17,14 +27,5 @@ const lazyAdam = (offset = 200) => {
 };
 
   images.forEach(image => observer.observe(image));
-
-  function onIntersection(entries) {
-    entries.forEach(entry => {
-      if (entry.intersectionRatio > 0) {
-        observer.unobserve(entry.target);
-        loadImage(entry.target);
-      }
-    });
-  }
 
 };
